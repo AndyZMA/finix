@@ -20169,3 +20169,43 @@ footer .disc {
 footer hr {
   border-color: rgba(0, 0, 0, 0.1);
 }
+
+/* 🔹 Oculta el botón burger en pantallas grandes */
+.menu-btn-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* 🔹 Muestra el botón solo en mobile */
+@media (max-width: 991px) {
+  .menu-btn-toggle {
+    display: block;
+  }
+
+  /* Opcional: oculta el menú completo en mobile hasta que se abra */
+  .nav-area nav {
+    display: none;
+  }
+
+  /* 🔹 Cuando el menú esté abierto (agregado por JS), muéstralo */
+  .nav-area nav.active {
+    display: block;
+    background: #fff; /* o el color de tu header */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+  }
+
+  /* Ajuste visual de los enlaces dentro del menú desplegable */
+  .nav-area nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-area nav ul li {
+    margin: 10px 0;
+  }
+}
