@@ -20140,35 +20140,48 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 
 footer {
-  background-color: #f9fafb;
-  color: #1f2937;
+  background: linear-gradient(135deg, #F97316 0%, #0B2C48 100%);
+  color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
+  padding: 40px 0;
 }
 
 .footer-title {
   font-weight: 600;
-  color: #0f172a;
+  color: #F97316; /* puedes dejarlo igual o cambiarlo a blanco si quieres más contraste */
 }
 
 footer a {
-  color: #1d4ed8;
+  color: #93C5FD;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 footer a:hover {
-  color: #2563eb;
+  color: #F97316;
   text-decoration: underline;
 }
 
 footer .disc {
   font-size: 15px;
   line-height: 1.6;
+  color: #E5E7EB;
 }
 
 footer hr {
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
 }
+
+footer p, footer span {
+  color: #E5E7EB;
+}
+
+
+
+
+
+
+
 
 /* 🔹 Oculta el botón burger en pantallas grandes */
 .menu-btn-toggle {
@@ -20209,3 +20222,43 @@ footer hr {
     margin: 10px 0;
   }
 }
+
+
+
+.header-style-one.style-two {
+  background: linear-gradient(90deg, #d86c1a 0%, #b45210 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.header-style-one.style-two .logo-area img {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+/* Enlaces del navbar */
+.header-style-one.style-two .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease;
+}
+
+.header-style-one.style-two .nav-link:hover {
+  color: #ffe7d1; /* blanco cálido */
+  text-decoration: underline;
+}
+
+/* Líneas del menú (versión móvil) */
+.header-style-one.style-two .menu-btn-toggle rect {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
+}
+
+.header-style-one.style-two .menu-btn-toggle:hover rect {
+  fill: #ffe7d1;
+}
+
+
