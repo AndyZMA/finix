@@ -22,9 +22,9 @@
     <!-- Owl Carousel -->
     <style>
     .bg-solution {
-  background: radial-gradient(circle at center, rgba(19, 13, 207, 0.85) 0%, rgba(15, 167, 226, 0.85) 60%, rgba(200, 92, 15, 0.85) 100%);
-  color: #fff;
-}
+    background: radial-gradient(circle at center, rgba(19, 13, 207, 0.85) 0%, rgba(15, 167, 226, 0.85) 60%, rgba(200, 92, 15, 0.85) 100%);
+    color: #fff;
+    }
     </style>
     
 </head>
@@ -134,17 +134,19 @@
     <!-- banner area end -->
 
     <!-- large video area start -->
-    <div class="alrge-video-area rts-section-gapBottom mt-dec-banner-3" style="z-index: 2;">
-        <div class="container-large">
-            <div class="row">
-                <div class="col-lg-12 mt--70">
-                    <div class="image--large-video jarallax v3">
-                        <img class="jarallax-img" src="assets/images/banner/BannerFinix.jpg" alt="large">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   <!-- ================== Banner con efecto Parallax ================== -->
+<!-- ==================== BANNER FULL PHOENIX ==================== -->
+<div class="phoenix-banner jarallax" data-jarallax data-speed="0.3" data-disable-parallax="false">
+  <!-- Imagen de fondo -->
+  <img class="jarallax-img" src="assets/images/banner/BannerFinix.jpg" alt="Phoenix Consultores">
+  <!-- Overlay translúcido naranja -->
+  <div class="phoenix-overlay"></div>
+</div>
+<!-- ============================================================= -->
+
+<!-- =============================================================== -->
+
+
     <!-- large video area end -->
 
     <!-- rts case studies area start -->
@@ -1094,6 +1096,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+<script>
+  jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.3,
+    disableParallax: false // 🔥 mantiene el efecto en móviles
+  });
+</script>
 
 <!-- Inicialización -->
 </body>
